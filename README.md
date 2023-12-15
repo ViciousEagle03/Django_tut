@@ -1,1 +1,2 @@
-Django tut
+# Django tut
+- "For learning purpose"
