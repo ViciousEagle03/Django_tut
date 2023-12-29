@@ -15,8 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+def home(request):
+    """request object tells us what kind of data is being send to the backend from the  """
+    
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('squareup.urls'))
 ]

@@ -1,0 +1,6 @@
+- CRUD supported for models
+- Add group
+- register
+- auth
+- From whom money was taken and to whom it was given
+- settleup inclusion

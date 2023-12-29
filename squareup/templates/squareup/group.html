@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Join exiting group</h1>
+<form method = "POST" action="">
+        {% csrf_token %}
+        <label>Name of the Group: </label>
+        <input type="text"  name="groupname" placeholder="Group name" />
+        {{form.as_p}}
+        <input type='submit' , value = "Submit" />
+</form>
+
+{% endblock content%}

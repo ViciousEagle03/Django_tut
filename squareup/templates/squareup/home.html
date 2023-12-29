@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Home Template</h1>
+
+
+<div>
+    <div>
+        <a href = "{% url 'create-group' %}">Start a new group</a>
+    </div>
+    <div>
+        <a href="{% url 'group' %}">Join existing group</a>
+    </div>
+        
+
+</div>
+
+{% endblock content %}

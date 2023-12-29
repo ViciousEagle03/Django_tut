@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div>
+    <h3>Group Name : {{pk}}</h3>
+    
+    <a href = "{% url 'addexpense' %}">Add Expense</a>
+    {% for grp_expense in grp_expenses %}
+        <p><strong>Amount:</strong> {{ grp_expense.amount }}</p>
+        <p><strong>Participants:</strong> {{ grp_expense.participants }}</p>
+    
+    {% endfor %}
+    
+</div>
+
+
+{% endblock content%}
